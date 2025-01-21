@@ -69,6 +69,8 @@ public class mainFrame extends javax.swing.JFrame{
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jList1 = new javax.swing.JList<>();
         jScrollPane3 = new javax.swing.JScrollPane();
         listEv3 = new javax.swing.JList<>();
         jLabel3 = new javax.swing.JLabel();
@@ -90,11 +92,18 @@ public class mainFrame extends javax.swing.JFrame{
         lblComp = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
 
+        jList1.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane4.setViewportView(jList1);
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         listEv3.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "EMF5", "UV", "Spirit Box", "Orb", "Escrita", "Dots", "Temp" };
+            String[] strings = { "EMF5", "UV", "Spirit Box", "Orb", "Writing", "Dots", "Temp" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
@@ -104,12 +113,12 @@ public class mainFrame extends javax.swing.JFrame{
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("Evidencia");
+        jLabel3.setText("Evidence");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 58, 68, -1));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Evidencia");
+        jLabel1.setText("Evidence");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(54, 58, 68, -1));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
@@ -118,11 +127,11 @@ public class mainFrame extends javax.swing.JFrame{
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Evidencia");
+        jLabel2.setText("Evidence");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(266, 58, 68, -1));
 
         listEv1.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "EMF5", "UV", "Spirit Box", "Orb", "Escrita", "Dots", "Temp" };
+            String[] strings = { "EMF5", "UV", "Spirit Box", "Orb", "Writing", "Dots", "Temp" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
@@ -148,7 +157,7 @@ public class mainFrame extends javax.swing.JFrame{
         getContentPane().add(btn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(146, 286, 136, 35));
 
         listEv2.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "EMF5", "UV", "Spirit Box", "Orb", "Escrita", "Dots", "Temp" };
+            String[] strings = { "EMF5", "UV", "Spirit Box", "Orb", "Writing", "Dots", "Temp" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
@@ -158,7 +167,7 @@ public class mainFrame extends javax.swing.JFrame{
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("Passos");
+        jLabel6.setText("Step");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 60, 174, -1));
 
         lblHunt.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
@@ -166,7 +175,7 @@ public class mainFrame extends javax.swing.JFrame{
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setText("Sanidade");
+        jLabel7.setText("Sanity");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 100, 174, -1));
 
         lblStep.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
@@ -174,7 +183,7 @@ public class mainFrame extends javax.swing.JFrame{
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel8.setText("Comportamento");
+        jLabel8.setText("Comportament");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 170, -1, -1));
         getContentPane().add(lblComp, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 200, 260, 110));
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 370, -1, -1));
@@ -313,9 +322,11 @@ public class mainFrame extends javax.swing.JFrame{
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JList<String> jList1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JLabel lblComp;
     private javax.swing.JLabel lblGhost;
     private javax.swing.JLabel lblHunt;
